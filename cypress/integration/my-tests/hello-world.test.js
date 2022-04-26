@@ -1,7 +1,10 @@
 /// <reference types="cypress" />
 
 describe('Empty Test', () => {
-  it('test one', () => {
+  it('We have correct page title', () => {
+    cy.viewport(1280, 720)
     cy.visit('https://codedamn.com/')
+
+    // cy.get('[data-testid=homepage-cta]').click()
   })
 })
